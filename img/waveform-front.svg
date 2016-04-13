@@ -1,0 +1,25 @@
+<svg width="1023" height="192" viewBox="0 0 1023 192" version="2.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>Waveform-1</title>
+<desc>Created using Figma (9000)</desc>
+<g id="Canvas" transform="translate(511 87)" figma:type="canvas">
+<g id="Waveform" style="mix-blend-mode:normal;isolation:isolate;" opacity="0.4" figma:type="vector">
+<use xlink:href="#path0_fill" transform="matrix(1 0 0 1 -511 -87)" fill="url(#paint0_linear)" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1.10957e-13 212.614 -1489.32 6.87299e-13 1256.16 -2.55795e-13)">
+<stop offset="0" stop-color="#24C5BF"/>
+<stop offset="1" stop-color="#24C5BF" stop-opacity="0.53"/>
+</linearGradient>
+<path id="path0_fill" d="
+M 0 36.3277
+C 133.565 36.3277 180.088 62.4736 276.635 62.4736
+C 373.182 62.4736 420.205 27.2781 530.759 27.2781
+C 641.313 27.2781 706.345 66.1492 792.387 66.1492
+C 878.429 66.1492 953.966 0 1023 0
+L 1023 192
+L 0 192
+L 0 36.3277
+Z"/>
+</defs>
+</svg>
