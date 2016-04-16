@@ -4,13 +4,13 @@
 <g id="Canvas" transform="translate(465 475)" figma:type="canvas">
 <g id="Group" style="mix-blend-mode:normal;" filter="url(#filter0_d)" figma:type="group">
 <g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
-<use xlink:href="#path0_fill" transform="matrix(1 0 0 1 -460 -467.677)" fill="#45FFF5" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path0_fill" transform="matrix(1 0 0 1 -460 -467.677)" fill="#ffffff" style="mix-blend-mode:normal;"/>
 </g>
 <g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
-<use xlink:href="#path1_fill" transform="matrix(1 0 0 1 -432.758 -472)" fill="#45FFF5" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path1_fill" transform="matrix(1 0 0 1 -432.758 -472)" fill="#ffffff" style="mix-blend-mode:normal;"/>
 </g>
 <g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
-<use xlink:href="#path2_fill" transform="matrix(1 0 0 1 -432.67 -465.647)" fill="#45FFF5" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path2_fill" transform="matrix(1 0 0 1 -432.67 -465.647)" fill="#ffffff" style="mix-blend-mode:normal;"/>
 </g>
 </g>
 </g>

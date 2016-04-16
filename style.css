@@ -10,11 +10,6 @@
 
 /* Global */
 
-:root {
-  font-size: calc(0.9vw + 10px);
-  font-family: Maison;
-}
-
 h1 {
   font-size: 1.9rem;
   font-weight: 200;
@@ -23,45 +18,40 @@ h1 {
 
 p {
   font-size: 0.9rem;
-  font-family: Maison;
+  font-family: "Maison", "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 400;
   line-height: 1.6;
 }
 
+@font-face {
+  font-family: Maison;
+  src: url("fonts/MaisonNeue-l.ttf");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: Maison;
+  src: url("fonts/MaisonNeue-b.ttf");
+  font-weight: 400;
+}
 /* END Global */
+
+/************/
+/*Mobile*/
+/************/
+
+:root {
+  font-size: 16px;
+  font-family: "Maison", "Helvetica Neue", Helvetica, sans-serif;
+}
+
 .hero {
-  height: 65vh;
+  height: 35rem;
   min-height: 500px;
   background: linear-gradient(#4886dd, #4289ec);
-  padding: 4rem 5rem;
+  padding: 1rem 2rem;
   position: relative;
   z-index: 0;
-}
-
-.hero:before {
-  content: '';
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background-image: url("img/waveform-front.svg");
-  background-size: 100%;
-  background-position: center bottom;
-  background-repeat: no-repeat;
-}
-
-.hero:after {
-  content: '';
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background-image: url("img/waveform-back.svg");
-  background-size: 100%;
-  background-position: center 22rem;
-  background-repeat: no-repeat;
 }
 
 .hero--logo {
@@ -90,14 +80,13 @@ p {
 
 .hero--bubbles__right {
   background-image: url("img/bubble-right.svg");
-  width: 14rem;
   height: 3.5rem;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 14rem;
   position: relative;
-  right: -16rem;
-  bottom: -40px;
+  right: 9.6rem;
+  bottom: -11px;
 }
 
 .echo {
@@ -106,15 +95,26 @@ p {
   z-index: 10;
 }
 
-.echo--image img {
-  width: 50rem;
-  margin-top: 0;
+.echo:after {
+  content: '';
+  width: 100%;
+  height: 26rem;
   position: absolute;
-  right: calc(7rem - 322px);
+  background: white;
+  left: 0;
+  top: 37rem;
+}
+
+.echo--image img {
+  width: auto;
+  height: 47rem;
+  margin-top: 14rem;
+  position: absolute;
+  right: -16rem;
 }
 
 .how-it-works {
-  padding: 4rem 5rem;
+  padding: 1rem 2rem;
   position: relative;
   z-index: 12;
 }
@@ -131,8 +131,8 @@ p {
 
 
 .get-started {
-  background-color: #f9f9f9;
-  padding: 4rem 5rem;
+  background-color: #F7F8FB;
+  padding: 1rem 2rem;
   height: 31rem;
 }
 
@@ -141,17 +141,10 @@ p {
 }
 
 .get-started--iphone {
-  width: 15rem;
-}
-
-.get-started--iphone img {
-  width: 100%;
+  display: none
 }
 
 .get-started--content {
-  width: 30rem;
-  padding-left: 4rem;
-  display: inline-block;
   margin-top: 130px;
 }
 
@@ -171,14 +164,134 @@ p {
   color: #E4E4E4;
 }
 
-@font-face {
-  font-family: Maison;
-  src: url("fonts/MaisonNeue-l.ttf");
-  font-weight: 200;
-}
 
-@font-face {
-  font-family: Maison;
-  src: url("fonts/MaisonNeue-b.ttf");
-  font-weight: 400;
+/************/
+/*Desktop*/
+/************/
+@media screen and (min-width: 688px) {
+
+  :root {
+    font-size: calc(0.9vw + 10px);
+  }
+
+  .hero {
+    height: 26rem;
+    min-height: 500px;
+    background: linear-gradient(#4886dd, #4289ec);
+    padding: 4rem 5rem;
+    position: relative;
+    z-index: 0;
+  }
+
+  .hero:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: url("img/waveform-front.svg");
+    background-size: 100%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+  }
+
+  .hero:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: url("img/waveform-back.svg");
+    background-size: 100%;
+    background-position: center 22rem;
+    background-repeat: no-repeat;
+  }
+
+  .hero--logo {
+    background-image: url("img/logo.svg");
+    height: 3rem;
+    width: 3rem;
+    background-size: 3rem;
+    background-repeat: no-repeat;
+  }
+
+  .hero--bubbles {
+    width: 33rem;
+    position: relative;
+    height: 12rem;
+    margin-top: 2rem;
+  }
+
+  .hero--bubbles__left {
+    background-image: url("img/bubble-left.svg");
+    width: 18rem;
+    height: 5rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 18rem;
+  }
+
+  .hero--bubbles__right {
+    background-image: url("img/bubble-right.svg");
+    width: 14rem;
+    height: 3.5rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 14rem;
+    position: relative;
+    right: -16rem;
+    bottom: -40px;
+  }
+
+  .echo {
+    width: 100%;
+    position: relative;
+    z-index: 10;
+  }
+
+  .echo:after {
+    display: none;
+  }
+
+  .echo--image img {
+    width: auto;
+    height: 47rem;
+    margin-top: 2rem;
+    position: absolute;
+    right: calc(6rem - 342px);
+  }
+
+  .how-it-works {
+    padding: 4rem 5rem;
+    position: relative;
+    z-index: 12;
+  }
+
+  .get-started {
+    background-color: #f9f9f9;
+    padding: 4rem 5rem;
+    height: 31rem;
+  }
+
+  .grid {
+    float: left;
+  }
+
+  .get-started--iphone {
+    width: 15rem;
+    display: inline-block;
+  }
+
+  .get-started--iphone img {
+    width: 100%;
+  }
+
+  .get-started--content {
+    width: 20rem;
+    padding-left: 4rem;
+    display: inline-block;
+    margin-top: 130px;
+  }
 }
